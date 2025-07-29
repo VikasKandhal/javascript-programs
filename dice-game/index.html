@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dice Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stake Dice Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>STAKE DICE GAME</h1>
 
-    <input type="number" id="target" placeholder="Enter target(0-100)">
+    <div class="dice" id="dice">🎲</div>
+
+    <label for="target">🎯 Target (0-100): <span id="targetValue">50</span></label>
+    <input type="range" id="target" min="1" max="99" value="50" />
 
     <select id="choice">
-       <option value="under">Under</option>
-       <option value="over">Over</option>
+      <option value="under">Under</option>
+      <option value="over">Over</option>
     </select>
 
-    <button id="rollBtn">Roll dice</button>
+    <input type="number" id="bet" placeholder="Enter your bet" />
+
+    <button id="rollBtn">Roll Dice</button>
 
     <h2 id="result"></h2>
+    <h3>💰 Balance: ₹<span id="balance">10000.00</span></h3>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
