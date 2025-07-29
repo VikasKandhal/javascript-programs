@@ -1,13 +1,13 @@
-body{
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
-  color:white;
+  color: white;
   text-align: center;
   margin: 0;
   padding: 40px;
 }
 
-.container{
+.container {
   max-width: 400px;
   margin: auto;
   background-color: #1f1f1f;
@@ -16,16 +16,21 @@ body{
   box-shadow: 0 0 20px #00ffae40;
 }
 
-input,select,button{
+input, select, button {
   padding: 10px;
   margin: 10px 0;
   width: 80%;
   border: none;
-  border-radius: 5px ;
+  border-radius: 5px;
   font-size: 16px;
 }
 
-button{
+input[type=range] {
+  width: 80%;
+  cursor: pointer;
+}
+
+button {
   background-color: #00ffae;
   color: black;
   cursor: pointer;
@@ -33,11 +38,21 @@ button{
   transition: 0.3s;
 }
 
-button:hover{
+button:hover {
   background-color: #00c98c;
 }
 
-#result{
+#result {
   margin-top: 20px;
   font-size: 20px;
+}
+
+.dice {
+  font-size: 60px;
+  margin: 20px 0;
+  transition: transform 0.4s ease;
+}
+
+.dice.roll {
+  transform: rotate(360deg) scale(1.2);
 }
