@@ -1,3 +1,4 @@
+//js dom
 let balance = 10000;
 
 document.getElementById("target").addEventListener("input", function() {
