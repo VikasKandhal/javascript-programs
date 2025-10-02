@@ -1,5 +1,5 @@
 //RANDOM NUMBER GENERATOR
-
+//using js
 const myButton = document.getElementById("myBtn");
 const label1 = document.getElementById("label1");
 const label2 = document.getElementById("label2");
