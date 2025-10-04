@@ -1,7 +1,7 @@
 //CRASH GAME
 // STAKE INSPIRED 
 //this is inpired by stake
-
+//DOM
 let multiplier = 1.0;
 let crashPoint = 0;
 let interval = null;
